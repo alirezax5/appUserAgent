@@ -1,0 +1,15 @@
+{
+    "name": "alirezax5/app-user-agent",
+    "autoload": {
+        "psr-4": {
+            "Alirezax5\\AppUserAgent\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "alirezax5",
+            "email": "alirezaaghax6@gmail.com"
+        }
+    ],
+    "require": {}
+}
