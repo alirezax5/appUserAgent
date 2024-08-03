@@ -14,7 +14,7 @@ class AppUserAgent
 
     private function detectApp(): void
     {
-        $apps = ['HiddifyNext', 'v2rayN', 'Streisand', 'Shadowrocket', 'V2Box', 'v2rayNG', 'Fair', 'NekoBox', 'NekoRay', 'clash-verge'];
+        $apps = ['HiddifyNext', 'v2rayN', 'Streisand', 'Shadowrocket', 'V2Box', 'v2rayNG', 'Fair', 'NekoBox', 'NekoRay', 'clash-verge', 'sing-box'];
 
         foreach ($apps as $app) {
             if (strpos($this->userAgent, $app) !== false) {
@@ -67,8 +67,13 @@ class AppUserAgent
     public function isNekoBox(): bool
     {
         return $this->appName === 'NekoBox';
-    } public function isNekoRay(): bool
+    }
+    public function isNekoRay(): bool
     {
         return $this->appName === 'NekoRay';
+    }
+    public function isSingBox(): bool
+    {
+        return $this->appName === 'sing-box';
     }
 }
